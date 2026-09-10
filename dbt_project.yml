@@ -1,0 +1,16 @@
+name: 'ecommerce_dbt'
+version: '1.0.0'
+profile: 'ecommerce_dbt'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+models:
+  ecommerce_dbt:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: ephemeral
+    marts:
+      +materialized: table

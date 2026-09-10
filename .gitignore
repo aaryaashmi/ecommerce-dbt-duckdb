@@ -1,0 +1,19 @@
+# Virtual environment
+dbt-env/
+venv/
+ENV/
+
+# DuckDB local database files
+*.duckdb
+*.duckdb.wal
+
+# dbt generated artifacts
+target/
+dbt_packages/
+logs/
+
+# Python / IDE cache
+__pycache__/
+*.py[cod]
+.vscode/
+.DS_Store
